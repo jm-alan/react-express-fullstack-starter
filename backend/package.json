@@ -1,0 +1,39 @@
+{
+  "name": "express-backend-starter",
+  "version": "1.0.0",
+  "description": "NodeJS / ExpressJS backend",
+  "main": "bin/www",
+  "scripts": {
+    "start": "per-env",
+    "start:development": "nodemon --trace-warnings -r dotenv/config ./bin/www",
+    "start:production": "node ./bin/www",
+    "init": "npx dotenv sequelize-cli db:create",
+    "deinit": "npx dotenv sequelize-cli db:drop",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "author": "JM Alan",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "express-async-handler": "^1.2.0",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "per-env": "^1.0.2",
+    "sequelize-cli": "^6.4.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^6.0.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
+    "sequelize": "^6.23.0",
+    "ws": "^8.8.1"
+  }
+}

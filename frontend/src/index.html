@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
+  <link id="material-symbols-link" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet'"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+  <link id="google-font-link" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet'"
+    href="https://fonts.googleapis.com/css?family=Google+Sans&display=swap" />
+  <title>Welcome to React!</title>
+</head>
+
+<style>
+  #loading-temp {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+  }
+
+</style>
+
+<body style="background-color: black;">
+  <div id='loading-temp'>
+    <svg style="margin: auto; background: rgba(0, 0, 0, 0); display: block; shape-rendering: auto" width='200px'
+      height='200px' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid'>
+      <rect x='17.5' y='30' width='20' height='80' fill='#4185c8'>
+        <animate attributeName='y' repeatCount='indefinite' dur='1s' calcMode='spline' keyTimes='0;0.5;1'
+          values='18;30;30' keySplines='0 0.5 0.5 1;0 0.5 0.5 1' begin='-0.2s' />
+        <animate attributeName='height' repeatCount='indefinite' dur='1s' calcMode='spline' keyTimes='0;0.5;1'
+          values='64;40;40' keySplines='0 0.5 0.5 1;0 0.5 0.5 1' begin='-0.2s' />
+      </rect>
+      <rect x='42.5' y='30' width='20' height='80' fill='#53aaff'>
+        <animate attributeName='y' repeatCount='indefinite' dur='1s' calcMode='spline' keyTimes='0;0.5;1'
+          values='21;30;30' keySplines='0 0.5 0.5 1;0 0.5 0.5 1' begin='-0.1s' />
+        <animate attributeName='height' repeatCount='indefinite' dur='1s' calcMode='spline' keyTimes='0;0.5;1'
+          values='58;40;40' keySplines='0 0.5 0.5 1;0 0.5 0.5 1' begin='-0.1s' />
+      </rect>
+      <rect x='67.5' y='30' width='20' height='80' fill='#8dc6ff'>
+        <animate attributeName='y' repeatCount='indefinite' dur='1s' calcMode='spline' keyTimes='0;0.5;1'
+          values='21;30;30' keySplines='0 0.5 0.5 1;0 0.5 0.5 1' />
+        <animate attributeName='height' repeatCount='indefinite' dur='1s' calcMode='spline' keyTimes='0;0.5;1'
+          values='58;40;40' keySplines='0 0.5 0.5 1;0 0.5 0.5 1' />
+      </rect>
+    </svg>
+  </div>
+  <div id="react-root"></div>
+</body>
+
+</html>

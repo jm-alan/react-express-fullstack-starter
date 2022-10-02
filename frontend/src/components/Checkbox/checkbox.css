@@ -1,0 +1,19 @@
+.checkbox-organizer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-checkbox {
+  height: calc(calc(3rem * 3) / 7);
+  width: calc(calc(3rem * 3) / 7);
+  border: 1px solid black;
+  border-radius: calc(calc(0.5rem * 3) / 7);
+}
+
+.custom-checkbox>span {}
+
+.custom-checkbox.checked {
+  background-color: black;
+  color: var(--not-quite-steelblue);
+}

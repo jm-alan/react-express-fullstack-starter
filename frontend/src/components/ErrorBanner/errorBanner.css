@@ -1,0 +1,43 @@
+#error-banner {
+  --error-banner-container-height: calc(var(--navbar-height) * 2);
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  width: 100vw;
+  height: var(--error-banner-container-height);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: pink;
+  color: red;
+}
+
+#scrolling-error-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(calc(1rem * 3) / 7) 0px;
+  width: 80vw;
+  height: var(--error-banner-container-height);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.error {
+  margin: calc(calc(0.5rem * 3) / 7) 0px;
+}
+
+#error-banner-close {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 5px;
+  padding: calc(calc(0.5rem * 3) / 7);
+}
+
+#error-banner-close:active {
+  background-color: red;
+  color: pink;
+}

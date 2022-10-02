@@ -1,0 +1,46 @@
+#modal-background {
+  z-index: 4;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+#modal-content {
+  position: relative;
+  background-color: var(--not-quite-steelblue);
+  overflow: hidden;
+  border-radius: calc(calc(1rem * 3) / 7);
+  height: 50vh;
+  width: 80vw;
+}
+
+.modal-floater {
+  background-color: black;
+  color: var(--not-quite-steelblue);
+  position: absolute;
+  z-index: 1;
+}
+
+.top-left {
+  top: calc(calc(1rem * 3) / 7);
+  left: calc(calc(1rem * 3) / 7);
+}
+
+.top-right {
+  top: calc(calc(1rem * 3) / 7);
+  right: calc(calc(1rem * 3) / 7);
+}
+
+.bottom-left {
+  bottom: calc(calc(1rem * 3) / 7);
+  left: calc(calc(1rem * 3) / 7);
+}
+
+.bottom-right {
+  bottom: calc(calc(1rem * 3) / 7);
+  right: calc(calc(1rem * 3) / 7);
+}

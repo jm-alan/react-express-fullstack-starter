@@ -1,0 +1,11 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-input {}
+
+.auth-input:focus {
+  outline: none;
+}

@@ -1,0 +1,66 @@
+:root {
+  --not-quite-steelblue: #4185c8;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: var(--not-quite-steelblue);
+}
+
+.clickable:active {
+  color: white !important;
+  background-color: var(--active-highlight);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Google Sans';
+}
+
+button {
+  --button-padding: calc(calc(1.5rem * 3) / 7);
+  --button-margin: calc(calc(0rem * 3) / 7);
+  border-radius: calc(calc(0.5rem * 3) / 7);
+  cursor: pointer;
+  border: none;
+  color: black;
+  background-color: var(--not-quite-steelblue);
+  padding: var(--button-padding);
+  margin: var(--button-margin);
+  transition:
+    padding 0.05s,
+    margin 0.05s;
+}
+
+button:not(:disabled):active {
+  margin: calc(var(--button-margin) + calc(calc(0.5rem * 3) / 7));
+  padding: calc(var(--button-padding) - calc(calc(0.5rem * 3) / 7));
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+  color: black;
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#router-container {
+  height: var(--above-navbar);
+  width: 100vw;
+  padding: calc(calc(2rem * 3) / 7) 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
